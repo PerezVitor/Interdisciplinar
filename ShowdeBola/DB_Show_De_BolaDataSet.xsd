@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DB_Show_De_BolaDataSet" targetNamespace="http://tempuri.org/DB_Show_De_BolaDataSet.xsd" xmlns:mstns="http://tempuri.org/DB_Show_De_BolaDataSet.xsd" xmlns="http://tempuri.org/DB_Show_De_BolaDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ShowdeBola.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_UsuarioTableAdapter" GeneratorDataComponentClassName="v_UsuarioTableAdapter" Name="v_Usuario" UserDataComponentName="v_UsuarioTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="DB_Show_De_Bola.dbo.v_Usuario" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Usuario, Nm_Usuario, Na_Usuario FROM dbo.v_Usuario</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_Usuario" DataSetColumn="ID_Usuario" />
+              <Mapping SourceColumn="Nm_Usuario" DataSetColumn="Nm_Usuario" />
+              <Mapping SourceColumn="Na_Usuario" DataSetColumn="Na_Usuario" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_CampoTableAdapter" GeneratorDataComponentClassName="v_CampoTableAdapter" Name="v_Campo" UserDataComponentName="v_CampoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="DB_Show_De_Bola.dbo.v_Campo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Campo, Ds_Campo, Vl_Campo FROM dbo.v_Campo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_Campo" DataSetColumn="ID_Campo" />
+              <Mapping SourceColumn="Ds_Campo" DataSetColumn="Ds_Campo" />
+              <Mapping SourceColumn="Vl_Campo" DataSetColumn="Vl_Campo" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_ClienteTableAdapter" GeneratorDataComponentClassName="v_ClienteTableAdapter" Name="v_Cliente" UserDataComponentName="v_ClienteTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="DB_Show_De_Bola.dbo.v_Cliente" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Cliente, Nm_Cliente, Telefone_Cliente, Celular_Cliente FROM dbo.v_Cliente</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_Cliente" DataSetColumn="ID_Cliente" />
+              <Mapping SourceColumn="Nm_Cliente" DataSetColumn="Nm_Cliente" />
+              <Mapping SourceColumn="Telefone_Cliente" DataSetColumn="Telefone_Cliente" />
+              <Mapping SourceColumn="Celular_Cliente" DataSetColumn="Celular_Cliente" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_HorarioReservaTableAdapter" GeneratorDataComponentClassName="v_HorarioReservaTableAdapter" Name="v_HorarioReserva" UserDataComponentName="v_HorarioReservaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="DB_Show_De_Bola.dbo.v_HorarioReserva" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_HrReserva, Nm_Cliente, Ds_Campo, DT_Reserva, HR_Reservada FROM dbo.v_HorarioReserva</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_HrReserva" DataSetColumn="ID_HrReserva" />
+              <Mapping SourceColumn="Nm_Cliente" DataSetColumn="Nm_Cliente" />
+              <Mapping SourceColumn="Ds_Campo" DataSetColumn="Ds_Campo" />
+              <Mapping SourceColumn="DT_Reserva" DataSetColumn="DT_Reserva" />
+              <Mapping SourceColumn="HR_Reservada" DataSetColumn="HR_Reservada" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillByDataCliente" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillByDataCliente" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillByDataCliente">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        TB_HorariosReserva.ID_HrReserva, TB_Cliente.Nm_Cliente, TB_Campo.Ds_Campo, TB_HorariosReserva.DT_Reserva, TB_HorariosReserva.HR_Reservada
+FROM            TB_HorariosReserva INNER JOIN
+                         TB_Cliente ON TB_HorariosReserva.ID_Cliente = TB_Cliente.ID_Cliente INNER JOIN
+                         TB_Campo ON TB_HorariosReserva.ID_Campo = TB_Campo.ID_Campo
+WHERE        (TB_HorariosReserva.ST_Horario = @St_Horario) AND (TB_Cliente.Nm_Cliente LIKE @Nm_Cliente) 
+AND TB_Campo.ID_Campo = @Id_Campo AND (TB_HorariosReserva.DT_Reserva BETWEEN @Dt_Inicio AND @Dt_Final)
+ORDER BY TB_HorariosReserva.HR_Reservada</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="St_Horario" ColumnName="ST_Horario" DataSourceName="DB_Show_De_Bola.dbo.TB_HorariosReserva" DataTypeServer="varchar(5)" DbType="AnsiString" Direction="Input" ParameterName="@St_Horario" Precision="0" ProviderType="VarChar" Scale="0" Size="5" SourceColumn="ST_Horario" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Nm_Cliente" ColumnName="Nm_Cliente" DataSourceName="DB_Show_De_Bola.dbo.TB_Cliente" DataTypeServer="varchar(100)" DbType="AnsiString" Direction="Input" ParameterName="@Nm_Cliente" Precision="0" ProviderType="VarChar" Scale="0" Size="100" SourceColumn="Nm_Cliente" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id_Campo" ColumnName="ID_Campo" DataSourceName="DB_Show_De_Bola.dbo.TB_Campo" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id_Campo" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="ID_Campo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Dt_Inicio" ColumnName="DT_Reserva" DataSourceName="DB_Show_De_Bola.dbo.TB_HorariosReserva" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@Dt_Inicio" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DT_Reserva" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Dt_Final" ColumnName="DT_Reserva" DataSourceName="DB_Show_De_Bola.dbo.TB_HorariosReserva" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@Dt_Final" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="DT_Reserva" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="v_FinanceiroTableAdapter" GeneratorDataComponentClassName="v_FinanceiroTableAdapter" Name="v_Financeiro" UserDataComponentName="v_FinanceiroTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="DB_Show_De_Bola.dbo.v_Financeiro" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_Financeiro, Vl_Financeiro, Fp_Financeiro, Dt_Pagamento FROM dbo.v_Financeiro</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_Financeiro" DataSetColumn="ID_Financeiro" />
+              <Mapping SourceColumn="Vl_Financeiro" DataSetColumn="Vl_Financeiro" />
+              <Mapping SourceColumn="Fp_Financeiro" DataSetColumn="Fp_Financeiro" />
+              <Mapping SourceColumn="Dt_Pagamento" DataSetColumn="Dt_Pagamento" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="DB_Show_De_Bola.dbo.TB_Financeiro" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByDataUsuario" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillByDataUsuario" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillByDataUsuario">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID_Financeiro, Vl_Financeiro, Fp_Financeiro, Dt_Pagamento
+FROM            TB_Financeiro
+WHERE        (Dt_Pagamento BETWEEN @Data AND @Data) AND (Stc_Financeiro = 'PAGO') AND (Id_Usuario = @Id_Usuario)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Data" ColumnName="Dt_Pagamento" DataSourceName="DB_Show_De_Bola.dbo.TB_Financeiro" DataTypeServer="date" DbType="AnsiString" Direction="Input" ParameterName="@Data" Precision="0" ProviderType="Date" Scale="0" Size="3" SourceColumn="Dt_Pagamento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Id_Usuario" ColumnName="Id_Usuario" DataSourceName="DB_Show_De_Bola.dbo.TB_Financeiro" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@Id_Usuario" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Id_Usuario" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DB_Show_De_BolaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DB_Show_De_BolaDataSet" msprop:Generator_UserDSName="DB_Show_De_BolaDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="v_Usuario" msprop:Generator_TableClassName="v_UsuarioDataTable" msprop:Generator_TableVarName="tablev_Usuario" msprop:Generator_TablePropName="v_Usuario" msprop:Generator_RowDeletingName="v_UsuarioRowDeleting" msprop:Generator_RowChangingName="v_UsuarioRowChanging" msprop:Generator_RowEvHandlerName="v_UsuarioRowChangeEventHandler" msprop:Generator_RowDeletedName="v_UsuarioRowDeleted" msprop:Generator_UserTableName="v_Usuario" msprop:Generator_RowChangedName="v_UsuarioRowChanged" msprop:Generator_RowEvArgName="v_UsuarioRowChangeEvent" msprop:Generator_RowClassName="v_UsuarioRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Usuario" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Usuario" msprop:Generator_ColumnPropNameInRow="ID_Usuario" msprop:Generator_ColumnPropNameInTable="ID_UsuarioColumn" msprop:Generator_UserColumnName="ID_Usuario" type="xs:int" />
+              <xs:element name="Nm_Usuario" msprop:Generator_ColumnVarNameInTable="columnNm_Usuario" msprop:Generator_ColumnPropNameInRow="Nm_Usuario" msprop:Generator_ColumnPropNameInTable="Nm_UsuarioColumn" msprop:Generator_UserColumnName="Nm_Usuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Na_Usuario" msprop:Generator_ColumnVarNameInTable="columnNa_Usuario" msprop:Generator_ColumnPropNameInRow="Na_Usuario" msprop:Generator_ColumnPropNameInTable="Na_UsuarioColumn" msprop:Generator_UserColumnName="Na_Usuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="v_Campo" msprop:Generator_TableClassName="v_CampoDataTable" msprop:Generator_TableVarName="tablev_Campo" msprop:Generator_TablePropName="v_Campo" msprop:Generator_RowDeletingName="v_CampoRowDeleting" msprop:Generator_RowChangingName="v_CampoRowChanging" msprop:Generator_RowEvHandlerName="v_CampoRowChangeEventHandler" msprop:Generator_RowDeletedName="v_CampoRowDeleted" msprop:Generator_UserTableName="v_Campo" msprop:Generator_RowChangedName="v_CampoRowChanged" msprop:Generator_RowEvArgName="v_CampoRowChangeEvent" msprop:Generator_RowClassName="v_CampoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Campo" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Campo" msprop:Generator_ColumnPropNameInRow="ID_Campo" msprop:Generator_ColumnPropNameInTable="ID_CampoColumn" msprop:Generator_UserColumnName="ID_Campo" type="xs:int" />
+              <xs:element name="Ds_Campo" msprop:Generator_ColumnVarNameInTable="columnDs_Campo" msprop:Generator_ColumnPropNameInRow="Ds_Campo" msprop:Generator_ColumnPropNameInTable="Ds_CampoColumn" msprop:Generator_UserColumnName="Ds_Campo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vl_Campo" msprop:Generator_ColumnVarNameInTable="columnVl_Campo" msprop:Generator_ColumnPropNameInRow="Vl_Campo" msprop:Generator_ColumnPropNameInTable="Vl_CampoColumn" msprop:Generator_UserColumnName="Vl_Campo" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="v_Cliente" msprop:Generator_TableClassName="v_ClienteDataTable" msprop:Generator_TableVarName="tablev_Cliente" msprop:Generator_TablePropName="v_Cliente" msprop:Generator_RowDeletingName="v_ClienteRowDeleting" msprop:Generator_RowChangingName="v_ClienteRowChanging" msprop:Generator_RowEvHandlerName="v_ClienteRowChangeEventHandler" msprop:Generator_RowDeletedName="v_ClienteRowDeleted" msprop:Generator_UserTableName="v_Cliente" msprop:Generator_RowChangedName="v_ClienteRowChanged" msprop:Generator_RowEvArgName="v_ClienteRowChangeEvent" msprop:Generator_RowClassName="v_ClienteRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Cliente" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Cliente" msprop:Generator_ColumnPropNameInRow="ID_Cliente" msprop:Generator_ColumnPropNameInTable="ID_ClienteColumn" msprop:Generator_UserColumnName="ID_Cliente" type="xs:int" />
+              <xs:element name="Nm_Cliente" msprop:Generator_ColumnVarNameInTable="columnNm_Cliente" msprop:Generator_ColumnPropNameInRow="Nm_Cliente" msprop:Generator_ColumnPropNameInTable="Nm_ClienteColumn" msprop:Generator_UserColumnName="Nm_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefone_Cliente" msprop:Generator_ColumnVarNameInTable="columnTelefone_Cliente" msprop:Generator_ColumnPropNameInRow="Telefone_Cliente" msprop:Generator_ColumnPropNameInTable="Telefone_ClienteColumn" msprop:Generator_UserColumnName="Telefone_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="13" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Celular_Cliente" msprop:Generator_ColumnVarNameInTable="columnCelular_Cliente" msprop:Generator_ColumnPropNameInRow="Celular_Cliente" msprop:Generator_ColumnPropNameInTable="Celular_ClienteColumn" msprop:Generator_UserColumnName="Celular_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="14" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="v_HorarioReserva" msprop:Generator_TableClassName="v_HorarioReservaDataTable" msprop:Generator_TableVarName="tablev_HorarioReserva" msprop:Generator_TablePropName="v_HorarioReserva" msprop:Generator_RowDeletingName="v_HorarioReservaRowDeleting" msprop:Generator_RowChangingName="v_HorarioReservaRowChanging" msprop:Generator_RowEvHandlerName="v_HorarioReservaRowChangeEventHandler" msprop:Generator_RowDeletedName="v_HorarioReservaRowDeleted" msprop:Generator_UserTableName="v_HorarioReserva" msprop:Generator_RowChangedName="v_HorarioReservaRowChanged" msprop:Generator_RowEvArgName="v_HorarioReservaRowChangeEvent" msprop:Generator_RowClassName="v_HorarioReservaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_HrReserva" msprop:Generator_ColumnVarNameInTable="columnID_HrReserva" msprop:Generator_ColumnPropNameInRow="ID_HrReserva" msprop:Generator_ColumnPropNameInTable="ID_HrReservaColumn" msprop:Generator_UserColumnName="ID_HrReserva" type="xs:int" />
+              <xs:element name="Nm_Cliente" msprop:Generator_ColumnVarNameInTable="columnNm_Cliente" msprop:Generator_ColumnPropNameInRow="Nm_Cliente" msprop:Generator_ColumnPropNameInTable="Nm_ClienteColumn" msprop:Generator_UserColumnName="Nm_Cliente">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ds_Campo" msprop:Generator_ColumnVarNameInTable="columnDs_Campo" msprop:Generator_ColumnPropNameInRow="Ds_Campo" msprop:Generator_ColumnPropNameInTable="Ds_CampoColumn" msprop:Generator_UserColumnName="Ds_Campo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DT_Reserva" msprop:Generator_ColumnVarNameInTable="columnDT_Reserva" msprop:Generator_ColumnPropNameInRow="DT_Reserva" msprop:Generator_ColumnPropNameInTable="DT_ReservaColumn" msprop:Generator_UserColumnName="DT_Reserva" type="xs:dateTime" />
+              <xs:element name="HR_Reservada" msprop:Generator_ColumnVarNameInTable="columnHR_Reservada" msprop:Generator_ColumnPropNameInRow="HR_Reservada" msprop:Generator_ColumnPropNameInTable="HR_ReservadaColumn" msprop:Generator_UserColumnName="HR_Reservada">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="v_Financeiro" msprop:Generator_TableClassName="v_FinanceiroDataTable" msprop:Generator_TableVarName="tablev_Financeiro" msprop:Generator_RowChangedName="v_FinanceiroRowChanged" msprop:Generator_TablePropName="v_Financeiro" msprop:Generator_RowDeletingName="v_FinanceiroRowDeleting" msprop:Generator_RowChangingName="v_FinanceiroRowChanging" msprop:Generator_RowEvHandlerName="v_FinanceiroRowChangeEventHandler" msprop:Generator_RowDeletedName="v_FinanceiroRowDeleted" msprop:Generator_RowClassName="v_FinanceiroRow" msprop:Generator_UserTableName="v_Financeiro" msprop:Generator_RowEvArgName="v_FinanceiroRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_Financeiro" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID_Financeiro" msprop:Generator_ColumnPropNameInRow="ID_Financeiro" msprop:Generator_ColumnPropNameInTable="ID_FinanceiroColumn" msprop:Generator_UserColumnName="ID_Financeiro" type="xs:int" />
+              <xs:element name="Vl_Financeiro" msprop:Generator_ColumnVarNameInTable="columnVl_Financeiro" msprop:Generator_ColumnPropNameInRow="Vl_Financeiro" msprop:Generator_ColumnPropNameInTable="Vl_FinanceiroColumn" msprop:Generator_UserColumnName="Vl_Financeiro" type="xs:decimal" />
+              <xs:element name="Fp_Financeiro" msprop:Generator_ColumnVarNameInTable="columnFp_Financeiro" msprop:Generator_ColumnPropNameInRow="Fp_Financeiro" msprop:Generator_ColumnPropNameInTable="Fp_FinanceiroColumn" msprop:Generator_UserColumnName="Fp_Financeiro" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dt_Pagamento" msprop:Generator_ColumnVarNameInTable="columnDt_Pagamento" msprop:Generator_ColumnPropNameInRow="Dt_Pagamento" msprop:Generator_ColumnPropNameInTable="Dt_PagamentoColumn" msprop:Generator_UserColumnName="Dt_Pagamento" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:v_Usuario" />
+      <xs:field xpath="mstns:ID_Usuario" />
+    </xs:unique>
+    <xs:unique name="v_Campo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:v_Campo" />
+      <xs:field xpath="mstns:ID_Campo" />
+    </xs:unique>
+    <xs:unique name="v_Cliente_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:v_Cliente" />
+      <xs:field xpath="mstns:ID_Cliente" />
+    </xs:unique>
+    <xs:unique name="v_HorarioReserva_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:v_HorarioReserva" />
+      <xs:field xpath="mstns:ID_HrReserva" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
